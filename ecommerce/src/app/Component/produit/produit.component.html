@@ -1,0 +1,7 @@
+<div id="container">
+  <h1>{{ this.produit.nom }}</h1>
+  <img src="{{ this.produit.image }}" alt="{{ this.produit.nom }}" />
+  <p>{{ this.produit.description }}</p>
+  <p *ngIf="this.produit.prix < 150">{{ this.produit.prix }} €</p>
+  <p *ngIf="this.produit.prix > 150">Le prix doit etre demander en magasin</p>
+</div>
