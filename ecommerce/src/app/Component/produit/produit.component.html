@@ -1,9 +1,10 @@
 <div id="container">
-  <h1>{{ this.produit.nom }}</h1>
-  <img src="{{ this.produit.image }}" alt="{{ this.produit.nom }}" />
-  <p>{{ this.produit.description }}</p>
+  <p>{{ this.produit.nom }}</p>
+  <img
+    src="{{ this.produit.image }}"
+    alt="{{ this.produit.nom }}"
+    class="picture"
+  />
   <p *ngIf="this.produit.prix < 150">{{ this.produit.prix }} €</p>
   <p *ngIf="this.produit.prix > 150">Le prix doit etre demander en magasin</p>
-  <p>{{ this.data.name }}</p>
-  <!-- <button (click)="this.data.name()">Change name</button> -->
 </div>

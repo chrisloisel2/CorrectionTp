@@ -1,0 +1,9 @@
+.SiderContainer {
+  height: 700px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
