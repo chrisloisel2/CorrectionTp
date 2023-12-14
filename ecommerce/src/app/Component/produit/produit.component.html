@@ -4,4 +4,6 @@
   <p>{{ this.produit.description }}</p>
   <p *ngIf="this.produit.prix < 150">{{ this.produit.prix }} €</p>
   <p *ngIf="this.produit.prix > 150">Le prix doit etre demander en magasin</p>
+  <p>{{ this.data.name }}</p>
+  <!-- <button (click)="this.data.name()">Change name</button> -->
 </div>
