@@ -80,5 +80,7 @@ export class OrderService {
     },
   ];
 
+  orderTrie: Order[] = this.order;
+
   constructor() {}
 }
