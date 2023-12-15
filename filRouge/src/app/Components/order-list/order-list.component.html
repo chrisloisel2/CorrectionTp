@@ -1,1 +1,9 @@
-<p>order-list works!</p>
+<div *ngFor="let item of this.order.order">
+  <div class="container">
+    <p>{{ item.type }}</p>
+    <p>{{ item.length }}</p>
+    <p>{{ item.HtPrice }}</p>
+    <p>{{ item.TTCPrice }}</p>
+    <p>{{ item.state }}</p>
+  </div>
+</div>

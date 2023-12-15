@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { OrderService } from '../../Service/order.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-order-list',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './order-list.component.html',
   styleUrl: './order-list.component.css',
 })
 export class OrderListComponent {
-  constructor(private order: OrderService) {}
+  constructor(public order: OrderService) {}
 }
