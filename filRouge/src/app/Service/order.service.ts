@@ -82,5 +82,9 @@ export class OrderService {
 
   orderTrie: Order[] = this.order;
 
+  filterByState(state: State) {
+    this.orderTrie = this.order.filter((order) => order.state == state);
+  }
+
   constructor() {}
 }
