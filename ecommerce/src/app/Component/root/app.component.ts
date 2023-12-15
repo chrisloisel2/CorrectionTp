@@ -22,7 +22,4 @@ import { SiderComponent } from '../sider/sider.component';
 })
 export class AppComponent {
   //   lst: Produit[] = this.data.lst;
-
-  filtre = this.data.filtre;
-  constructor(public data: DataProviderService) {}
 }

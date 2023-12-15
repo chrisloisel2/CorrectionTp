@@ -1,0 +1,8 @@
+<app-sider></app-sider>
+<div id="produitContainer">
+  <app-produit
+    class="produit"
+    *ngFor="let produit of this.data.lstfiltre"
+    [produit]="produit"
+  ></app-produit>
+</div>
