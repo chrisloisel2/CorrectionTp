@@ -35,4 +35,20 @@ export class OrderService {
   ordonnerParprixDecroissant() {
     this.orderTrie = this.orderTrie.sort((a, b) => b.HtPrice - a.HtPrice);
   }
+
+  getOrderByID(id: number) {
+    return this.http.getOrder(id);
+  }
+
+  postOrder(order: Order) {
+    return this.http.postOrder(order);
+  }
+
+  deleteOrder(id: number) {
+    return this.http.deleteOrder(id);
+  }
+
+  updateOrder(order: Order) {
+    return this.http.updateOrder(order);
+  }
 }

@@ -1,3 +1,4 @@
+<button (click)="this.order.chargeOrders()">recharger</button>
 <div *ngFor="let item of this.order.orderTrie">
   <div class="container">
     <p>{{ item.type }}</p>
@@ -5,5 +6,6 @@
     <p>{{ item.HtPrice }}</p>
     <p>{{ item.TTCPrice }}</p>
     <p>{{ item.state }}</p>
+    <button (click)="this.suppOrder(item.id)">Supprimer</button>
   </div>
 </div>

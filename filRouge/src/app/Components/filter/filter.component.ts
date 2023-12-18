@@ -12,18 +12,16 @@ import { State } from '../../Model/State.enum';
 export class FilterComponent {
   constructor(private order: OrderService) {}
 
-  filtrerParState(state: string) {
-    switch (state) {
-      case 'en cours':
-        this.order.filterByState(State.enCours);
-        break;
-      case 'annulé':
-        this.order.filterByState(State.annule);
-        break;
-      case 'terminé':
-        this.order.filterByState(State.termine);
-        break;
-    }
+  filtreOption() {
+    this.order.filterByState(State.enCours);
+  }
+
+  filtreAnnule() {
+    this.order.filterByState(State.annule);
+  }
+
+  filtreTermine() {
+    this.order.filterByState(State.termine);
   }
 
   ordonnerParPrixCroissant() {

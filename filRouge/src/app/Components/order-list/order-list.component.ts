@@ -12,4 +12,10 @@ import { FetcherService } from '../../Service/fetcher.service';
 })
 export class OrderListComponent {
   constructor(public order: OrderService) {}
+
+  suppOrder(id: number) {
+    this.order.deleteOrder(id).subscribe(() => {
+      this.order.chargeOrders();
+    });
+  }
 }
