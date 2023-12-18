@@ -1,4 +1,11 @@
 <button (click)="this.order.chargeOrders()">recharger</button>
+
+<p>{{ nom }}</p>
+
+<form>
+  <input type="text" name="nom" [(ngModel)]="this.nom" />
+</form>
+
 <div *ngFor="let item of this.order.orderTrie">
   <div class="container">
     <p>{{ item.type }}</p>
