@@ -25,4 +25,12 @@ export class FilterComponent {
         break;
     }
   }
+
+  ordonnerParPrixCroissant() {
+    this.order.ordonnerParprixCroissant();
+  }
+
+  ordonnerParPrixDecroissant() {
+    this.order.ordonnerParprixDecroissant();
+  }
 }

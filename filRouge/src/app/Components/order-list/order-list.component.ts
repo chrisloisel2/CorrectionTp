@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OrderService } from '../../Service/order.service';
 import { CommonModule } from '@angular/common';
+import { FetcherService } from '../../Service/fetcher.service';
 
 @Component({
   selector: 'app-order-list',

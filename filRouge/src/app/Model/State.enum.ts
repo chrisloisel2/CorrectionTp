@@ -1,5 +1,5 @@
 export enum State {
-  enCours = "en cours",
-  annule = "annulé",
-  termine = "terminé",
+  enCours = 'En cours',
+  annule = 'annulé',
+  termine = 'terminé',
 }
