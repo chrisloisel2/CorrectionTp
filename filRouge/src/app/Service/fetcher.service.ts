@@ -25,6 +25,6 @@ export class FetcherService {
   }
 
   updateOrder(order: Order) {
-    return this.http.put('http://82.165.127.44/api/orders/' + order.id, order);
+    return this.http.put('http://82.165.127.44/api/order/' + order.id, order);
   }
 }

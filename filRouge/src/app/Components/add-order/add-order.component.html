@@ -1,0 +1,27 @@
+<form>
+  <input
+    name="type"
+    type="text"
+    placeholder="type"
+    [(ngModel)]="inputOrder.type"
+  />
+  <input
+    name="length"
+    type="number"
+    placeholder="length"
+    [(ngModel)]="inputOrder.length"
+  />
+  <input
+    name="HtPrice"
+    type="number"
+    placeholder="HtPrice"
+    [(ngModel)]="inputOrder.HtPrice"
+  />
+  <input
+    name="TTCPrice"
+    type="number"
+    placeholder="TTCPrice"
+    [(ngModel)]="inputOrder.TTCPrice"
+  />
+  <button (click)="addOrder()">Creer Order</button>
+</form>

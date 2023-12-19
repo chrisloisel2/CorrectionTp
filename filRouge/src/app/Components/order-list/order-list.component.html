@@ -1,11 +1,5 @@
 <button (click)="this.order.chargeOrders()">recharger</button>
 
-<p>{{ nom }}</p>
-
-<form>
-  <input type="text" name="nom" [(ngModel)]="this.nom" />
-</form>
-
 <div *ngFor="let item of this.order.orderTrie">
   <div class="container">
     <p>{{ item.type }}</p>
@@ -14,7 +8,28 @@
     <p>{{ item.TTCPrice }}</p>
     <p>{{ item.state }}</p>
     <button (click)="this.suppOrder(item.id)">Supprimer</button>
-    <button>modifier</button>
   </div>
-  <button>ajouter</button>
+  <input name="type" type="text" placeholder="type" [(ngModel)]="item.type" />
+  <input
+    name="length"
+    type="number"
+    placeholder="length"
+    [(ngModel)]="item.length"
+  />
+  <input
+    name="HtPrice"
+    type="number"
+    placeholder="HtPrice"
+    [(ngModel)]="item.HtPrice"
+  />
+  <input
+    name="TTCPrice"
+    type="number"
+    placeholder="TTCPrice"
+    [(ngModel)]="item.TTCPrice"
+  />
+  <button (click)="this.order.updateOrder(item).subscribe()">modifier</button>
 </div>
+<button>ajouter</button>
+
+<app-add-order></app-add-order>
